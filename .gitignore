@@ -1,0 +1,63 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore log files and temp files
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+
+# Ignore database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore credentials and secrets
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore environment-specific files
+/.env
+/.env.*
+
+# Ignore node modules (if using Webpacker or JS frameworks)
+/node_modules
+
+# Ignore Yarn integrity file
+/yarn-error.log
+
+# Ignore compiled assets
+/public/assets
+/public/packs
+/public/packs-test
+/public/uploads
+
+# Ignore cache files
+/tmp/cache
+/tmp/pids
+/tmp/sockets
+/tmp/storage
+
+# Ignore byebug command history
+.byebug_history
+
+# Ignore coverage reports (if using SimpleCov)
+/coverage
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore test artifacts
+/spec/examples.txt
+
+# Ignore Spring files
+/spring/*.pid
+
+# Ignore Docker-related files (if using Docker)
+/docker-compose.override.yml

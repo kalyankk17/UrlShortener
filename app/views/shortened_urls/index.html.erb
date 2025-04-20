@@ -1,0 +1,7 @@
+<%= stylesheet_link_tag "shortened_urls", "data-turbo-track": "reload" %>
+
+<h1>Your shortened URLs</h1>
+
+<%@urls_details.each do |url_detail| %>
+  <%= render partial: 'show', locals: { url_detail: url_detail } %>
+<% end %>

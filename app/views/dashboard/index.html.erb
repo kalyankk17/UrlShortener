@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag "shortened_urls", "data-turbo-track": "reload" %>
+
+<div class="root">
+  <div class="container py-5">
+    <!-- Header -->
+    <%= render partial: "header" %>
+
+    <!-- Main URL Shortener Card -->
+    <%= render partial: "shortened_urls/new" %>
+
+    <!-- Footer -->
+    <%= render partial: "footer" %>
+  </div>
+
+  <%= render partial: "layouts/error_modal" %>
+</div>

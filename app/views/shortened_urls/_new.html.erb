@@ -1,0 +1,24 @@
+<div class="card border-0 bg-light shadow-sm rounded-4 mb-5">
+  <%= form_with(url: "/shortened_urls", method: :post, local: true) do |f| %>
+    <div class="card-body p-4 p-md-5">
+
+      <h2 class="h2 text-center text-secondary mb-4">
+        Paste the URL to be shortened
+      </h2>
+
+      <div class="row g-3 mb-4">
+        <div class="col-12 col-md-9">
+          <%= f.text_field :long_url,class: "form-control form-control-lg", placeholder: "Enter the link here" %>
+        </div>
+        <div class="col-12 col-md-3">
+          <%= f.submit "Shorten URL", class: "btn btn-success  btn-lg w-100" %>
+        </div>
+      </div>
+
+      <p class="text-muted text-center mb-0">
+        ShortURL is a free tool to shorten URLs and generate short links<br>
+        URL shortener allows to create a shortened link making it easy to share
+      </p>
+    </div>
+  <% end %>
+</div>

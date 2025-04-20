@@ -1,0 +1,40 @@
+.modal-content {
+    border-radius: 10px; /* Rounded corners for the modal */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.modal-header {
+    padding: 1.5rem; /* Add spacing for a clean look */
+}
+
+.modal-body {
+    padding: 2rem; /* Add spacing for better readability */
+}
+
+.modal-footer {
+    padding: 1.5rem; /* Add spacing for footer */
+}
+
+#modal-error-message {
+    font-size: 1.2rem; /* Slightly larger font for the error message */
+    color: #6c757d; /* Muted text color */
+}
+
+.custom-list {
+    list-style: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.custom-list li {
+    margin-bottom: 0.5rem; /* Adds spacing between list items */
+    display: flex;
+    align-items: center;
+}
+
+.custom-list li::before {
+    content: "->"; /* Adds a custom bullet */
+    color: #6c757d; /* Muted color for the bullet */
+    font-size: 1.2rem; /* Slightly larger bullet */
+    margin-right: 0.5rem; /* Spacing between bullet and text */
+}

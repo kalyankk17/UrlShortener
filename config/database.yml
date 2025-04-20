@@ -1,0 +1,34 @@
+#
+#default: &default
+#  adapter: postgresql
+#  encoding: unicode
+#  # For details on connection pooling, see Rails configuration guide
+#  # https://guides.rubyonrails.org/configuring.html#database-pooling
+#  pool: <%#= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+#development:
+#  <<: *default
+#  database: UrlShortener_development
+
+# for running in docker
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("POSTGRES_USER", "postgres") %>
+  password: <%= ENV.fetch("POSTGRES_PASSWORD", "password") %>
+  host: <%= ENV.fetch("POSTGRES_HOST", "db") %>
+  port: <%= ENV.fetch("POSTGRES_PORT", 5432) %>
+
+development:
+  <<: *default
+  database: UrlShortener_development
+
+test:
+  <<: *default
+  database: UrlShortener_test
+
+production:
+  <<: *default
+  database: UrlShortener_production

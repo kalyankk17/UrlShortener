@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  long_url: MyString
+  short_url: MyString
+  session_id: MyString
+  expired_at: 2025-04-18 13:16:13
+
+two:
+  long_url: MyString
+  short_url: MyString
+  session_id: MyString
+  expired_at: 2025-04-18 13:16:13
