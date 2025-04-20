@@ -17,6 +17,14 @@ This project is a **URL Shortening Service** that allows users to input long URL
 
 ---
 
+## Technologies Used
+
+- **Ruby on Rails**: Backend framework for building the service.
+- **Docker**: Containerization for easy setup and deployment.
+- **PostgreSQL**: Database for storing URLs and analytics.
+
+---
+
 ## Installation
 To set up the project locally using Docker, follow these steps:
 
@@ -41,10 +49,8 @@ To set up the project locally using Docker, follow these steps:
 
 ---
 
-## Technologies Used
+## Demo Video
 
-- **Ruby on Rails**: Backend framework for building the service.
-- **Docker**: Containerization for easy setup and deployment.
-- **PostgreSQL**: Database for storing URLs and analytics.
+[Download the Demo Video](./path-to-demo-video/url-shortener-demo.mov)
 
 ---
