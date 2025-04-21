@@ -21,6 +21,14 @@ module UrlShortener
       self
     end
 
+    def on_success
+      yield if error.empty?
+    end
+
+    def on_error
+      yield error unless error.empty?
+    end
+
     private
 
     def update_attributes(shorted_url)

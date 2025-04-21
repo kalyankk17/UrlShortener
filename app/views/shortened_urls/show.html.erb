@@ -17,28 +17,28 @@
             </tr>
             </thead>
             <tbody>
-            <% @urls_details.each do |url_detail| %>
-              <tr>
-                <td>
-                  <div class="input-group" data-controller="copy">
-                    <input type="text" class="form-control form-control-sm" value="<%= "#{@domain_name}#{url_detail.short_url}" %>" readonly>
+              <% @details.urls_details.each do |url_detail| %>
+                <tr>
+                  <td>
+                    <div class="input-group" data-controller="copy">
+                      <input type="text" class="form-control form-control-sm" value="<%= "#{@details.domain_name}#{url_detail.short_url}" %>" readonly>
 
-                    <button class="btn btn-outline-success btn-sm button-addon2" type="button"
-                            onclick="window.location.href='<%= "#{@domain_name}#{url_detail.short_url}" %>';">
-                      Visit
-                    </button>
-                    <button class="btn btn-outline-primary btn-sm copy-button" data-action="click->copy#copy">Copy</button>
-                  </div>
-                </td>
-                <td class="text-truncate" style="max-width: 200px;">
-                  <a href="#" class="text-decoration-none"><%= url_detail.long_url %></a>
-                </td>
-                <td><%= url_detail.created_at.strftime("%d-%m-%Y %H:%M:%S") %></td>
-                <td>
-                  <span class="badge bg-success"><%= url_detail.visit_count %></span>
-                </td>
-              </tr>
-            <% end %>
+                      <button class="btn btn-outline-success btn-sm button-addon2" type="button"
+                              onclick="window.location.href='<%= "#{@details.domain_name}#{url_detail.short_url}" %>';">
+                        Visit
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm copy-button" data-action="click->copy#copy">Copy</button>
+                    </div>
+                  </td>
+                  <td class="text-truncate" style="max-width: 200px;">
+                    <a href="#" class="text-decoration-none"><%= url_detail.long_url %></a>
+                  </td>
+                  <td><%= url_detail.created_at.strftime("%d-%m-%Y %H:%M:%S") %></td>
+                  <td>
+                    <span class="badge bg-success"><%= url_detail.visit_count %></span>
+                  </td>
+                </tr>
+              <% end %>
             </tbody>
           </table>
         </div>
