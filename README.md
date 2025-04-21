@@ -30,18 +30,18 @@ To set up the project locally using Docker, follow these steps:
 
 1. **Build the Docker Image**:
     ```bash
-    docker-compose build
+    docker compose build
     ```
 
 2. **Run the Application by setting db**:
     ```bash
-    docker-compose run app rails db:create db:migrate
+    docker compose run app rails db:create db:migrate
     ```
 
 
 3. **Start the Application**:
     ```bash
-    docker-compose up
+    docke compose up
     ```
 
 4. **Access the Application**:
