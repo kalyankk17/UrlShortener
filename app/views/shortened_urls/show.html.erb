@@ -14,7 +14,6 @@
               <th>Original URL</th>
               <th>Created Date</th>
               <th>Clicks</th>
-              <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -36,13 +35,7 @@
                 </td>
                 <td><%= url_detail.created_at.strftime("%d-%m-%Y %H:%M:%S") %></td>
                 <td>
-                  <span class="badge bg-success">245</span>
-                </td>
-                <td>
-                  <div class="btn-group btn-group-sm">
-                    <button class="btn btn-outline-primary">Stats</button>
-                    <button class="btn btn-outline-danger">Delete</button>
-                  </div>
+                  <span class="badge bg-success"><%= url_detail.visit_count %></span>
                 </td>
               </tr>
             <% end %>
